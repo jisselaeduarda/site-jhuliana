@@ -1,95 +1,45 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça o espaço da Jhuliana e agende seu horário.">
-
-  <title>Jhuliana | Beleza e Delicadeza</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f9d9e6">
+  <meta name="description" content="Doçuras da Juh: bolos, doces e cupcakes personalizados feitos com amor.">
+  <title>Doçuras da Juh | Feito com amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-  <!-- CABEÇALHO -->
-  <header>
-    <h1>Jhuliana</h1>
-
-    <nav aria-label="Navegação principal">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#agenda">Agendamento</a>
-    </nav>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Doçuras da Juh, início"><span class="brand-icon">🧁</span><span>Doçuras<br>da Juh <span class="heart">♡</span></span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav id="menu" class="nav"><a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#sobre">Sobre a Juh</a><a href="#agenda">Encomendas</a><a href="#contato">Contato</a></nav>
+    </div>
   </header>
-
-  <!-- CONTEÚDO PRINCIPAL -->
   <main>
-
-    <!-- INÍCIO -->
-    <section id="inicio">
-      <h2>Um espaço feito com carinho para você</h2>
-
-      <p>
-        Delicadeza, cuidado e beleza em cada detalhe.
-      </p>
-
-      <a href="#agenda">Agende seu horário</a>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy"><div class="bow">🎀</div><p class="eyebrow">Feito com carinho, especialmente para você</p><h1>Doçuras<br>da Juh <span>♡</span></h1><p class="hero-sub">Bolos • Doces • Cupcakes<br>Personalizados</p><a class="btn btn-pink" href="#agenda">♡ Fazer encomenda</a></div>
+        <div class="hero-photo photo-frame"><img src="assets/juh-principal.jpg" alt="Juh preparando um bolo artesanal" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-placeholder" hidden><span>🧁</span><strong>Foto principal da Juh</strong><small>Adicione assets/juh-principal.jpg</small></div><span class="photo-decoration">✿ ♡ ✿</span></div>
+      </div>
+      <div class="scallop" aria-hidden="true"></div>
     </section>
-
-    <!-- SOBRE -->
-    <section id="sobre">
-      <h2>Conheça a Jhuliana</h2>
-
-      <p>
-        Um atendimento especial pensado para você.
-      </p>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="servicos">
-      <h2>Nossos serviços</h2>
-
-      <p>
-        Em breve, conheça todos os nossos serviços.
-      </p>
-    </section>
-
-    <!-- AGENDAMENTO -->
-    <section id="agenda">
-      <h2>Agende seu momento</h2>
-
-      <p>
-        Entre em contato para consultar os horários
-        disponíveis.
-      </p>
-    </section>
-
+    <section class="categories container" aria-label="Categorias de doces"><a href="#cardapio"><span>🎂</span><strong>Bolos<br>personalizados</strong></a><a href="#cardapio"><span>🧁</span><strong>Cupcakes</strong></a><a href="#cardapio"><span>🍬</span><strong>Docinhos<br>tradicionais</strong></a><a href="#cardapio"><span>🎁</span><strong>Kits<br>especiais</strong></a></section>
+    <section id="cardapio" class="section container"><h2 class="script-title"><span>♡</span> Nossas Delícias <span>♡</span></h2><p class="section-intro">Cada detalhe preparado para adoçar seus momentos.</p><div class="products">
+      <article class="product"><div class="product-image"><img src="assets/bolo-personalizado.jpg" alt="Bolo personalizado" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="fallback" hidden>🎂</span></div><h3>Bolos personalizados</h3></article>
+      <article class="product"><div class="product-image"><img src="assets/doces-festa.jpg" alt="Doces de festa" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="fallback" hidden>🍓</span></div><h3>Doces de festa</h3></article>
+      <article class="product"><div class="product-image"><img src="assets/cupcakes.jpg" alt="Cupcakes decorados" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="fallback" hidden>🧁</span></div><h3>Cupcakes</h3></article>
+      <article class="product"><div class="product-image"><img src="assets/brigadeiros.jpg" alt="Brigadeiros artesanais" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="fallback" hidden>🍫</span></div><h3>Docinhos tradicionais</h3></article>
+    </div></section>
+    <section id="sobre" class="about section"><div class="container about-grid"><div class="about-photo photo-frame"><img src="assets/juh-sobre.jpg" alt="Juh, responsável pela doceria" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-placeholder" hidden><span>🌸</span><strong>Foto da Juh</strong><small>Adicione assets/juh-sobre.jpg</small></div></div><div><h2 class="script-title">Sobre a Juh ♡</h2><p>Aqui cada doce é feito com carinho, dedicação e muito amor!</p><p>Trabalhamos com bolos, doces e lembranças personalizadas para tornar o seu momento ainda mais especial.</p><a class="btn btn-pink" href="#cardapio">🧁 Conheça o cardápio</a></div></div></section>
+    <section id="agenda" class="section container booking"><h2 class="script-title">🗓 Agenda de Encomendas</h2><p class="section-intro">Escolha uma data para consultar a disponibilidade. A confirmação é feita diretamente com a Juh.</p><div class="booking-grid"><div class="calendar"><div class="calendar-heading"><button id="prev-month" aria-label="Mês anterior">‹</button><strong id="month-title"></strong><button id="next-month" aria-label="Próximo mês">›</button></div><div class="weekdays"><span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span></div><div class="days" id="calendar-days"></div></div><div class="booking-info"><div class="legend"><span><i class="available"></i> Data para consulta</span><span><i class="selected"></i> Data selecionada</span><span><i class="unavailable"></i> Data passada</span></div><p id="selected-date">Selecione uma data no calendário.</p><a id="request-date" class="btn btn-pink" href="#contato">🗓 Solicitar data de encomenda</a><small>Calendário demonstrativo: as datas ainda não representam vagas reais.</small><span class="teddy">🧸</span></div></div></section>
+    <section class="container benefits"><div>♡ <span>Tudo feito<br>com amor</span></div><div>🚚 <span>Entrega ou retirada<br>(combinados)</span></div><div>♢ <span>Qualidade e<br>confiabilidade</span></div></section>
+    <section id="contato" class="contact container"><a class="btn btn-green" id="whatsapp-link" href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20encomenda%20na%20Do%C3%A7uras%20da%20Juh." target="_blank" rel="noopener noreferrer">☏ Fale conosco pelo WhatsApp</a><p class="verse">“Para que todos vejam, e saibam, e considerem, e juntamente entendam que a mão do Senhor fez isto, e o Santo de Israel o criou.” — Isaías 41:20</p></section>
   </main>
-
-  <!-- RODAPÉ -->
-  <footer>
-
-    <p class="versiculo">
-      "Para que todos vejam, e saibam, e considerem,
-      e juntamente entendam que a mão do Senhor fez isto,
-      e o Santo de Israel o criou."
-      — Isaías 41:20
-    </p>
-
-    <p>
-      © 2026 Jhuliana. Todos os direitos reservados.
-    </p>
-
-    <p class="creditos">
-      Desenvolvido por
-      <strong>Seven Digital Studio</strong>
-    </p>
-
-  </footer>
-
+  <footer class="footer"><div class="container footer-inner"><a href="#topo" class="brand footer-brand"><span class="brand-icon">🧁</span><span>Doçuras da Juh ♡</span></a><div><strong>Siga nas Redes Sociais</strong><a href="https:/www.instagram.com/jhuliana.eduarda/" target="_blank" rel="noopener noreferrer">◎ @Ana Bella & Maria donuts encantado</a></div></div><div class="footer-bottom">© 2026 Doçuras da Juh. Todos os direitos reservados.<br>Desenvolvido por <a href="https://www.sevenpages.com.br/" target="_blank" rel="noopener noreferrer">Seven Digital Studio</a></div></footer>
 </body>
 </html>

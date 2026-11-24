@@ -1,0 +1,8 @@
+FRONTEND DOÇURAS DA JUH
+1. Copie index.html, style.css e script.js para a pasta do projeto site-jhuliana.
+2. Copie a pasta assets/ e coloque as fotos reais com os nomes:
+   juh-principal.jpg, juh-sobre.jpg, bolo-personalizado.jpg, doces-festa.jpg, cupcakes.jpg, brigadeiros.jpg
+3. Abra index.html no Chrome.
+4. Confirme o Instagram e configure o número de WhatsApp da cliente nos links wa.me do HTML e script.js.
+5. O calendário é DEMONSTRATIVO, não indica disponibilidade real nem grava reservas.
+6. Antes de publicar, revise fotos, textos, links e responsividade.
