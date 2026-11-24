@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+      --rosa: #d58fa7;
+        --rosa-claro: #f9e8ee;
+          --rosa-suave: #fff5f7;
+            --rosa-escuro: #a95b79;
+              --texto: #252025;
+                --branco: #ffffff;
+}
+
+* {
+      margin: 0;
+        padding: 0;
+          box-sizing: border-box;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+      font-family: 'DM Sans', sans-serif;
+        background: var(--rosa-suave);
+          color: var(--texto);
+            line-height: 1.6;
+}
+
+header {
+      background: var(--branco);
+        padding: 22px 7%;
+          display: flex;
+            justify-content: space-between;
+              align-items: center;
+                gap: 24px;
+}
+
+header h1 {
+      font-family: 'Playfair Display', serif;
+        font-size: 32px;
+          color: var(--rosa-escuro);
+}
+
+nav {
+      display: flex;
+        flex-wrap: wrap;
+          gap: 22px;
+}
+
+nav a {
+      color: var(--texto);
+        text-decoration: none;
+          font-size: 14px;
+            font-weight: 600;
+}
+
+nav a:hover {
+      color: var(--rosa-escuro);
+}
+
+section {
+      padding: 90px 8%;
+        text-align: center;
+}
+
+section h2 {
+      font-family: 'Playfair Display', serif;
+        font-size: clamp(30px, 5vw, 52px);
+          line-height: 1.2;
+            margin-bottom: 22px;
+}
+
+section p {
+      max-width: 620px;
+        margin: 0 auto 25px;
+}
+
+#inicio {
+      min-height: 550px;
+        display: flex;
+          flex-direction: column;
+            align-items: center;
+              justify-content: center;
+                background: linear-gradient(
+                        135deg,
+                            #fff5f7,
+                                #f4cedc
+                );
+}
+
+#inicio h2 {
+      max-width: 760px;
+}
+
+#inicio a {
+      display: inline-block;
+        background: var(--rosa-escuro);
+          color: white;
+            padding: 15px 30px;
+              border-radius: 30px;
+                text-decoration: none;
+                  font-weight: 600;
+                    transition: transform .3s, background .3s;
+}
+
+#inicio a:hover {
+      background: #88435e;
+        transform: translateY(-3px);
+}
+
+#sobre {
+      background: white;
+}
+
+#servicos {
+      background: var(--rosa-claro);
+}
+
+#agenda {
+      background: white;
+}
+
+footer {
+      background: #f2d8e1;
+        padding: 45px 8%;
+          text-align: center;
+            font-size: 13px;
+}
+
+footer p {
+      max-width: 700px;
+        margin: 0 auto 15px;
+}
+
+/* Versão para celulares */
+@media (max-width: 768px) {
+      header {
+            flex-direction: column;
+                padding: 20px 5%;
+                    gap: 16px;
+      }
+
+        header h1 {
+                font-size: 30px;
+        }
+
+          nav {
+                justify-content: center;
+                    gap: 12px 18px;
+          }
+
+            nav a {
+                    font-size: 12px;
+            }
+
+              section {
+                    padding: 65px 6%;
+              }
+
+                #inicio {
+                        min-height: 480px;
+                }
+
+                  #inicio h2 {
+                        font-size: 36px;
+                  }
+}
+
+      }
+                )
+}
